@@ -1,0 +1,150 @@
+body { 
+  overflow-y: scroll; 
+}
+.navbar-default {
+    margin-bottom: 0px;
+    background: transparent;
+    position: absolute;
+    border: none;
+    text-transform: uppercase;
+}
+.navbar-toggle{
+    border: none;
+
+}
+.navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
+    border: none;
+    background-color: transparent;
+
+}
+.icon-bar{
+    background-color: white!important;
+}
+
+@media (max-width: 768px) {
+  
+    .navbar-default .navbar-nav > li > a{ 
+        border-width: 0px 0px 4px 0px;
+        margin-left: 20px;
+        color: black;
+        text-align: center;
+        margin-top: 80px;
+        margin-bottom: 80px;
+    }
+    .navbar-collapse{
+        background-color: white;
+        max-height: none !important;
+
+    }
+
+    /*Hover*/
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:focus {
+    color: black;
+    border-bottom: 2px solid #bbb;
+    }
+
+    /*Non-Active*/
+    .navbar-default .navbar-nav > .open > a,
+    .navbar-default .navbar-nav > .open > a:hover,
+    .navbar-default .navbar-nav > .open > a:focus {
+        background-color: black;
+    }
+
+    /*Active*/
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:hover,
+    .navbar-default .navbar-nav > .active > a:focus {
+        background-color: white;
+        color: black;
+        border-bottom: 2px solid white;
+        
+    
+
+    }
+
+}
+
+@media (min-width: 768px) {
+    .navbar-default .navbar-nav > li > a{ 
+        border-width: 0px 0px 4px 0px;
+        margin-left: 20px;
+        color: white;
+    }
+    /*Hover*/
+    .navbar-default .navbar-nav > li > a:hover,
+    .navbar-default .navbar-nav > li > a:focus {
+    color: #bbb;
+    border-bottom: 2px solid #bbb;
+    }
+
+    /*Non-Active*/
+    .navbar-default .navbar-nav > .open > a,
+    .navbar-default .navbar-nav > .open > a:hover,
+    .navbar-default .navbar-nav > .open > a:focus {
+        background-color: transparent;
+        color: #eee; 
+    }
+
+    /*Active*/
+    .navbar-default .navbar-nav > .active > a,
+    .navbar-default .navbar-nav > .active > a:hover,
+    .navbar-default .navbar-nav > .active > a:focus {
+        background-color: transparent;
+        color: white;
+        border-bottom: 2px solid white;
+        
+    
+
+    }
+
+}
+
+.progress-bar-vertical{
+    transform: rotate(90deg);
+}
+.icon-big{
+    max-width: 8em;
+}
+
+#logotext{
+    color: white;
+    padding-bottom: 40px;
+}
+.navbar-left{
+    padding-left: 15px;
+}
+#homeFirstRow{
+    padding-bottom: 150px;
+    padding-top: 150px;
+    background-image: url("/images/header_image_darker.jpeg");
+    background-size: cover;
+
+}
+#resumeFirstRow{
+    padding-bottom: 150px;
+    padding-top: 150px;
+    background-image: url("/images/resume-header.jpg");
+    background-size: cover;
+
+}
+#contactFirstRow{
+    padding-bottom: 150px;
+    padding-top: 150px;
+    background-image: url("/images/contact-header.jpg");
+    background-size: cover;
+
+}
+.ng-enter{
+    transition: 0.2s linear all;
+    opacity: 0;
+}
+.ng-enter.ng-enter-active{
+    opacity: 1;
+}
+.horizontal-collapse {
+    height: 70px;
+  }
+  .navbar-collapse.in {
+    overflow-y: hidden;
+  }
