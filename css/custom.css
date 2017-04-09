@@ -97,14 +97,12 @@ body {
     
 
     }
-
 }
-
 .progress-bar-vertical{
     transform: rotate(90deg);
 }
 .icon-big{
-    max-width: 8em;
+    font-size: 12rem;
 }
 
 #logotext{
