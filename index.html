@@ -8,53 +8,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Henrik Edlund</title>
 
-    <!-- Bootstrap -->
+    <!-- CSS -->
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="node_modules/devicon/devicon.css" rel="stylesheet">
     <link href="node_modules/devicon/devicon-colors.css" rel="stylesheet">
     <link href="css/custom.css" rel="stylesheet">
-    <!-- Angular -->
+    <link href="https://fonts.googleapis.com/css?family=Cormorant|Open+Sans|Roboto|Playfair+Display" rel="stylesheet">
+
+    <!-- Scripts -->
     <script src="node_modules/angular/angular.js"></script>
     <script src="node_modules/angular-animate/angular-animate.min.js"></script>
     <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
     <script src="node_modules/angular-route/angular-route.min.js"></script>
     <script src="node_modules/angularjs-gauge/dist/angularjs-gauge.min.js"></script>
-    <!-- Chartist -->
-    
     <script src="script.js"></script>
 </head>
 
 <body>
     <!-- Navigation Bar -->
     <div ng-controller="navController">
-        <nav class="container navbar transparent navbar-default navbar-fixed-top"  role="navigation">
+        <nav class="container navbar transparent navbar-default navbar-fixed-top" role="navigation">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" ng-click="isNavCollapsed = !isNavCollapsed">
+                <button type="button" class="navbar-toggle" ng-click="isNavCollapsed = !isNavCollapsed; changeNavHeader()">
                     <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
+                    <span class="icon-bar" ng-class="dynamicColor"></span>
+                    <span class="icon-bar" ng-class="dynamicColor"></span>
+                    <span class="icon-bar" ng-class="dynamicColor"></span>
                 </button>
                 <img src="images/Henrik_Edlund_Logo_White_Smaller.png" class="navbar-left" alt="banner">
             </div>
             <div class="collapse navbar-collapse" uib-collapse="isNavCollapsed">
                 <ul class="nav navbar-nav navbar-right">
-                    <li class="" ng-class="{active:isActive('/')}">
+                    <li class="" ng-class="{active:isActive('/')}" ng-click="closeNav()">
                         <a href="/">
                             Who I Am
                         </a>
                     </li>
-                    <li class="" ng-class="{active:isActive('/resume')}">
+                    <li class="" ng-class="{active:isActive('/resume')}" ng-click="closeNav()">
                         <a href="/resume">
                             Resume
                         </a>
                     </li>
-                    <li class="" ng-class="{active:isActive('/portfolio')}">
+                    <li class="" ng-class="{active:isActive('/portfolio')}" ng-click="closeNav()">
                         <a href="/portfolio">Portfolio
                         </a>
                     </li>
-                    <li class="" ng-class="{active:isActive('/contact')}">
+                    <li class="" ng-class="{active:isActive('/contact')}" ng-click="closeNav()">
                         <a href="/contact">
                             Contact
                         </a>

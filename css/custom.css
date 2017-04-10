@@ -1,3 +1,13 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+}
+p, div {
+    font-family: 'Cormorant', serif;
+}
+.html, body{
+    background: url("/images/header-image-darker.jpeg") no-repeat center fixed;
+    background-size: cover;
+}
 body { 
   overflow-y: scroll; 
 }
@@ -7,10 +17,10 @@ body {
     position: absolute;
     border: none;
     text-transform: uppercase;
+    
 }
 .navbar-toggle{
     border: none;
-
 }
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{
     border: none;
@@ -22,14 +32,26 @@ body {
 }
 /*When small*/
 @media (max-width: 768px) {
-  
+    .navbar-default {
+        background-color: transparent;
+        
+    }
+    .navbar-collapse{
+        padding-left: 14px;
+        padding-right: 14px;
+        width: 100%;
+        position: absolute;
+        border-top: none;
+    }
+    
     .navbar-default .navbar-nav > li > a{ 
         border-width: 0px 0px 4px 0px;
         margin-left: 20px;
         color: black;
         text-align: center;
-        margin-top: 80px;
-        margin-bottom: 80px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        
     }
     .navbar-collapse{
         background-color: white;
@@ -40,8 +62,10 @@ body {
     /*Hover*/
     .navbar-default .navbar-nav > li > a:hover,
     .navbar-default .navbar-nav > li > a:focus {
-    color: black;
-    border-bottom: 2px solid #bbb;
+        color: black;
+        background-color: #dddddd;
+        transition: all linear 0.3s;
+        box-shadow: 0px 0px 150px #aaa;
     }
 
     /*Non-Active*/
@@ -68,6 +92,7 @@ body {
         border-width: 0px 0px 4px 0px;
         margin-left: 20px;
         color: white;
+        font-size: 2rem;
     }
     /*Hover*/
     .navbar-default .navbar-nav > li > a:hover,
@@ -105,10 +130,29 @@ body {
 .icon-big{
     font-size: 120px;
 }
+.bottom{
+   
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  
+}
 
+.call-to-action{
+    background-color: transparent;
+    color: white;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    
+}
+#staggeredCallToAction{
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
 #logotext{
     color: white;
     padding-bottom: 40px;
+    font-family: 'Playfair Display', serif;
 }
 
 .navbar-left{
@@ -118,9 +162,6 @@ body {
 #homeFirstRow{
     padding-bottom: 150px;
     padding-top: 150px;
-    background-image: url("/images/header_image_darker.jpeg");
-    background-size: cover;
-
 }
 #resumeFirstRow{
     padding-bottom: 150px;
@@ -162,6 +203,7 @@ body {
 .cards > div > h2{
     color: #504e4f;
     font-weight: bolder;
+    font-family: 'Cormorant', serif;
 
 }
 .card-yellow{
