@@ -18,19 +18,19 @@ p, div {
     height: 100vh;
 }
 .bg-resume{
-    background: url("/images/resume-header.jpg") no-repeat center fixed;
+    background: url("/images/resume-header-darker.jpg") no-repeat center fixed;
      background-size: cover;
 
     height: 100vh;
 }
 .bg-portfolio{
-    background: url("/images/header-image.jpeg") no-repeat center fixed;
+    background: url("/images/portfolio-header-darker.jpg") no-repeat center fixed;
      background-size: cover;
 
     height: 100vh;
 }
 .bg-contact{
-    background: url("/images/contact-header.jpg") no-repeat center fixed;
+    background: url("/images/contact-header-darker.jpg") no-repeat center fixed;
      background-size: cover;
  
     height: 100vh;
@@ -57,6 +57,23 @@ p, div {
 .navbar-default .navbar-toggle .icon-bar .icon-bar-black{
     background-color: black!important;
 }
+
+#headerQuote{
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    color: white;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+
+}
+#headerTitle{
+    color: white;
+    font-size: 3em;
+    font-weight: 800;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
 /*When small*/
 @media (max-width: 767px) {
     .navbar-default {
@@ -74,8 +91,9 @@ p, div {
         -ms-overflow: hidden;
         z-index: 0;
         font-size: 1.8em;
-        font-weight: 50;
+        font-weight: 600;
         height: 100vh;
+        letter-spacing: 2px;
         
     }
     
@@ -88,7 +106,7 @@ p, div {
         padding-bottom: 10vh;
     }
     .navbar-collapse{
-        background-color: white;
+        background: white;
         max-height: none !important;
 
     }
