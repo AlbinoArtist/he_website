@@ -9,7 +9,8 @@ app.config(function ($routeProvider, $locationProvider) {
         .when("/resume",
         {
             templateUrl: "views/view-resume.html",
-            controller: "navController"
+            controller: "navController",
+            
         })
         .when("/portfolio",
         {
@@ -41,7 +42,28 @@ app.controller("navController", ["$scope", "$location", "$routeParams",
             if($scope.isNavCollapsed == false){
                 $scope.isNavCollapsed = true;
             }
+        };
+
+        $scope.bgClass = function(){
+            var background = "notworking";
+            switch($location.path()){
+                case "/":
+                    background = "bg-main";
+                    break;
+                case "/portfolio":
+                    background = "bg-portfolio";
+                    break;
+                case "/resume":
+                    background = "bg-resume";
+                    break;
+                case "/contact":
+                    background = "bg-contact";
+                    break;
+            }
+            return background;
 
         };
+
+
 
     }]);

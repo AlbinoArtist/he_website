@@ -4,12 +4,36 @@ h1, h2, h3, h4, h5, h6 {
 p, div {
     font-family: 'Cormorant', serif;
 }
-.html, body{
+
+.bg{
     background: url("/images/header-image-darker.jpeg") no-repeat center fixed;
     background-size: cover;
+    height: 100vh;
+    
 }
-body { 
-  overflow-y: scroll; 
+.bg-main{
+    background: url("/images/header-image-darker.jpeg") no-repeat center fixed;
+     background-size: cover;
+
+    height: 100vh;
+}
+.bg-resume{
+    background: url("/images/resume-header.jpg") no-repeat center fixed;
+     background-size: cover;
+
+    height: 100vh;
+}
+.bg-portfolio{
+    background: url("/images/header-image.jpeg") no-repeat center fixed;
+     background-size: cover;
+
+    height: 100vh;
+}
+.bg-contact{
+    background: url("/images/contact-header.jpg") no-repeat center fixed;
+     background-size: cover;
+ 
+    height: 100vh;
 }
 .navbar-default {
     margin-bottom: 0px;
@@ -27,21 +51,32 @@ body {
     background-color: transparent;
 
 }
-.icon-bar{
-    background-color: white!important;
+.navbar-default .navbar-toggle .icon-bar{
+    background-color: white;
+}
+.navbar-default .navbar-toggle .icon-bar .icon-bar-black{
+    background-color: black!important;
 }
 /*When small*/
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .navbar-default {
         background-color: transparent;
-        
     }
     .navbar-collapse{
-        padding-left: 14px;
-        padding-right: 14px;
+        top: 0;
+        padding-top: 48px;
+        padding-left: 0px;
+        padding-right: 0px;
         width: 100%;
         position: absolute;
         border-top: none;
+        overflow: hidden;
+        -ms-overflow: hidden;
+        z-index: 0;
+        font-size: 1.8em;
+        font-weight: 50;
+        height: 100vh;
+        
     }
     
     .navbar-default .navbar-nav > li > a{ 
@@ -49,9 +84,8 @@ body {
         margin-left: 20px;
         color: black;
         text-align: center;
-        padding-top: 80px;
-        padding-bottom: 80px;
-        
+        padding-top: 10vh;
+        padding-bottom: 10vh;
     }
     .navbar-collapse{
         background-color: white;
@@ -62,10 +96,8 @@ body {
     /*Hover*/
     .navbar-default .navbar-nav > li > a:hover,
     .navbar-default .navbar-nav > li > a:focus {
-        color: black;
-        background-color: #dddddd;
-        transition: all linear 0.3s;
-        box-shadow: 0px 0px 150px #aaa;
+        color: #95d6d2;
+        
     }
 
     /*Non-Active*/
@@ -80,8 +112,8 @@ body {
     .navbar-default .navbar-nav > .active > a:hover,
     .navbar-default .navbar-nav > .active > a:focus {
         background-color: white;
-        color: black;
-        border-bottom: 2px solid white;
+        color: #95d6d2;
+        
     }
     
 
@@ -166,14 +198,12 @@ body {
 #resumeFirstRow{
     padding-bottom: 150px;
     padding-top: 150px;
-    background-image: url("/images/resume-header.jpg");
     background-size: cover;
 
 }
 #contactFirstRow{
     padding-bottom: 150px;
     padding-top: 150px;
-    background-image: url("/images/contact-header.jpg");
     background-size: cover;
 
 }
