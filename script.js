@@ -38,6 +38,7 @@ app.controller("navController", ["$scope", "$location", "$routeParams",
 
         $scope.isNavCollapsed = true;
 
+
         $scope.closeNav = function(){
             if($scope.isNavCollapsed == false){
                 $scope.isNavCollapsed = true;

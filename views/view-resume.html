@@ -2,25 +2,73 @@
 <div class="container content-wrapper">
     <div id="resumeFirstRow" class="row">
         <div class="col-12-sm text-center">
-            <h2 id="headerQuote" >Find out what I've accomplished</h2>
-            <h1 id="headerTitle" >Explore my experiences</h1>
+            <h2 id="headerQuote">Find out what I've accomplished</h2>
+            <h1 id="headerTitle">Explore my experiences</h1>
         </div>
     </div>
-</div>-->
-<div class="container">
+</div>
+<div class="container card-container">
 
     <div class="row cards">
-        <div class="col-md-3  card-blue">
-            <h2>Henrik EDLUND</h2>
+        <div class="col-md-8  card-blue">
+            <h2>HENRIK EDLUND</h2>
             I'm a 24 year old user experience designer, programmer and recent engineering graduate from Sweden.
         </div>
-        <div class="col-md-6  card-yellow">
-            <h2>Henrik EDLUND</h2>
-            I'm a 24 year old user experience designer, programmer and recent engineering graduate from Sweden.
+        <div class="col-md-4  card-green">
+            Age: 24 Nationality: Swedish Hobbies: Skiing, Traveling, Music, Tech
         </div>
-        <div class="col-md-3  card-green">
-            <h2>Henrik EDLUND</h2>
-            I'm a 24 year old user experience designer, programmer and recent engineering graduate from Sweden.
+    </div>
+    <div class="row cards">
+        <div class="col-lg-12  card-yellow">
+             <li ng-repeat="x in names">
+                {{x.name}}
+             </li>
+
         </div>
+    </div>
+    <div class="row cards">
+        <div class="col-xs-6  card-red">
+            Publications: Master thesis in Design Sciences: A model and interface for Skill Based Routing IEEE ISMAR 2017: AR as a User
+            Interface for The Internet of Things - Comparing Three Interaction Models
+        </div>
+        <div class="col-xs-6  card-red">
+            <h2>LANGUAGES</h2>
+            <div class="row">
+                <div class="col-xs-6">
+                    Swedish
+                </div>
+                <div class="col-xs-6">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 100%">
+                            100%
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    English
+                </div>
+                <div class="col-xs-6">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"
+                            style="width: 90%">
+                            90%
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    German
+                </div>
+                <div class="col-xs-6">
+                    
+                </div>
+            </div>
+
+        </div>
+
     </div>
 </div>

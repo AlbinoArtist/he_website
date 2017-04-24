@@ -9,7 +9,8 @@ p, div {
     background: url("/images/header-image-darker.jpeg") no-repeat center fixed;
     background-size: cover;
     height: 100vh;
-    
+    transition: 0.5s ease-in-out all;
+    -webkit-transition: 0.5 ease-in-out all;    
 }
 .bg-main{
     background: url("/images/header-image-darker.jpeg") no-repeat center fixed;
@@ -228,9 +229,13 @@ p, div {
 .ng-enter{
     transition: 0.2s linear all;
     opacity: 0;
+    left:0;
 }
 .ng-enter.ng-enter-active{
     opacity: 1;
+}
+.ng-leave{
+    left:-100%;
 }
 .horizontal-collapse {
     height: 70px;
@@ -238,20 +243,32 @@ p, div {
 .navbar-collapse.in {
     overflow-y: hidden;
 }
+.card-container{
+    border: solid white;
+   border-width: 4px 2px 4px 2px;
+}
 .cards{
-    padding: 5px 15px 15px 15px; 
+    border: solid white;
+   border-width: 0px 4px 0px 4px;
+font-family: 'Open Sans'; 
 }
 .cards > div[class*='col-']{
-    border: 5px solid white;
+    border: solid white;
+    border-width: 4px 4px 4px 4px;
     padding: inherit;
-    font-weight: 800;
-    color: white;
+    color: #757575;
+    padding: 5px 15px 15px 15px; 
+    font-family: 'Roboto', serif;
+    font-weight: 600;
+    font-size: 1em;
 
 }
+
 .cards > div > h2{
-    color: #504e4f;
-    font-weight: bolder;
-    font-family: 'Cormorant', serif;
+    color: white;
+    font-weight: 800;
+    font-family: 'Oswald', serif;
+    
 
 }
 .card-yellow{
