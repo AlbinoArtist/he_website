@@ -5,6 +5,7 @@ p, div {
     font-family: 'Cormorant', serif;
 }
 
+
 .bg{
     background: url("/images/header-image-darker.jpeg") no-repeat center fixed;
     background-size: cover;
@@ -191,7 +192,7 @@ p, div {
 
 .call-to-action{
     background-color: transparent;
-    color: white;
+    color:white;
     -webkit-animation-delay: 1s;
     animation-delay: 1s;
     
