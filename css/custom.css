@@ -1,8 +1,12 @@
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Lato', serif;
 }
 p, div {
-    font-family: 'Cormorant', serif;
+    font-family: 'Roboto', serif;
+    font-weight: 200;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 2px;
+    
 }
 
 
@@ -144,7 +148,7 @@ p, div {
         border-width: 0px 0px 4px 0px;
         margin-left: 20px;
         color: white;
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     /*Hover*/
     .navbar-default .navbar-nav > li > a:hover,
@@ -203,9 +207,18 @@ p, div {
 }
 #logotext{
     color: white;
-    padding-bottom: 40px;
-    font-family: 'Playfair Display', serif;
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    letter-spacing: 4px;
+    -webkit-font-smoothing: antialiased;
 }
+.logotextcontainer{
+padding-bottom: 80px;
+padding-top: 20px;
+}
+
+
 
 .navbar-left{
     padding-left: 15px;
@@ -251,7 +264,6 @@ p, div {
 .cards{
     border: solid white;
    border-width: 0px 4px 0px 4px;
-font-family: 'Open Sans'; 
 }
 .cards > div[class*='col-']{
     border: solid white;
@@ -260,17 +272,21 @@ font-family: 'Open Sans';
     color: #757575;
     padding: 5px 15px 15px 15px; 
     font-family: 'Roboto', serif;
-    font-weight: 600;
+    font-weight: 200;
     font-size: 1em;
 
 }
 
+
 .cards > div > h2{
     color: white;
-    font-weight: 800;
-    font-family: 'Oswald', serif;
+    font-weight: 300;
+    letter-spacing: 2px;
     
 
+}
+.card-green > i{
+    padding: 5px 5px 5px 5px;
 }
 .card-yellow{
     background: #fed16c;
@@ -283,5 +299,34 @@ font-family: 'Open Sans';
 }
 .card-red{
     background: #f58a78;
-    
+}
+.skill,
+.row .cards > .skill{
+    border: none;
+    padding: none;
+}
+
+.typed-cursor{
+	opacity: 1;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+    color: white;
+    font-size: 1.2em;
+
+}
+@keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-moz-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
 }
