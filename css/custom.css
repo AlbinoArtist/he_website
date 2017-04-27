@@ -150,6 +150,10 @@ p, div {
         color: white;
         font-size: 1.5rem;
     }
+    #logotext{
+        font-size: 1.5em;
+    }
+    
     /*Hover*/
     .navbar-default .navbar-nav > li > a:hover,
     .navbar-default .navbar-nav > li > a:focus {
@@ -207,7 +211,6 @@ p, div {
 }
 #logotext{
     color: white;
-    
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     letter-spacing: 4px;
@@ -329,4 +332,15 @@ padding-top: 20px;
 	0% { opacity:1; }
 	50% { opacity:0; }
 	100% { opacity:1; }
+}
+.skill-icons{
+    font-size: 3.5em;
+    height: 1.5em;
+    width: 1.5em;
+}
+.animation-stagger.ng-enter{
+    -webkit-transition-delay:2.5s;
+  transition-delay:2.5s;
+  -webkit-transition-duration:2.5s;
+  transition-duration:2.5s;
 }
