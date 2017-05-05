@@ -1,29 +1,21 @@
 var app = angular.module('henrikedlund', ['ngRoute', 'ngAnimate', 'ui.bootstrap', 'angularjs-gauge']);
 app.config(function ($routeProvider, $locationProvider) {
     $routeProvider
-        .when("/",
-        {
+        .when("/", {
             templateUrl: "views/view-home.html",
             controller: "navController"
         })
-        .when("/resume",
-        {
+        .when("/resume", {
             templateUrl: "views/view-resume.html",
-            controller: "navController",
 
         })
-        .when("/portfolio",
-        {
+        .when("/portfolio", {
             templateUrl: "views/view-portfolio.html",
-            controller: "navController"
         })
-        .when("/contact",
-        {
+        .when("/contact", {
             templateUrl: "views/view-contact.html",
-            controller: "navController"
         })
-        .otherwise(
-        {
+        .otherwise({
             redirectTo: "/"
         });
 
@@ -72,22 +64,22 @@ app.controller("navController", ["$scope", "$location", "$routeParams", "$interv
             var fullText = $scope.textstring;
             var currentLength = 0;
             $interval(function () {
-                if(currentLength< fullTextLength){
-                    $scope.textstring = fullText.substr(0,currentLength);
-                    currentLength++;
-                }
-                else{
-                    $interval.cancel();
-                }
-                    
-            }
-            ,
+                    if (currentLength < fullTextLength) {
+                        $scope.textstring = fullText.substr(0, currentLength);
+                        currentLength++;
+                    } else {
+                        $interval.cancel();
+                    }
+
+                },
                 70);
         };
         animateText();
+        $scope.test = 12;
 
 
 
 
 
-    }]);
+    }
+]);
