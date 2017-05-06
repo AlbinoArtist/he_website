@@ -201,13 +201,13 @@ p, div {
 .call-to-action{
     background-color: transparent;
     color:white;
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
     
 }
 #staggeredCallToAction{
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
 }
 #logotext{
     color: white;

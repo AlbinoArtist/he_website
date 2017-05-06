@@ -22,8 +22,8 @@ app.config(function ($routeProvider, $locationProvider) {
     $locationProvider.html5Mode(true);
 });
 
-app.controller("navController", ["$scope", "$location", "$routeParams", "$interval",
-    function ($scope, $location, $routeParams, $interval) {
+app.controller("navController", ["$scope", "$location", "$routeParams", "$interval", "$window",
+    function ($scope, $location, $routeParams, $interval, $window) {
         $scope.isActive = function (route) {
             return route === $location.path();
         };
@@ -56,16 +56,20 @@ app.controller("navController", ["$scope", "$location", "$routeParams", "$interv
             return background;
 
         };
-        $scope.textstring = "UX DESIGNER, UI PROTOTYPER, CODER AND COMPUTER ENTHUSIAST!";
+    }
+]);
+
+app.directive('animateText', function ($interval) {
+    function link(scope, element,attrs) {
+        var fullTextLength = scope.inputText.length;
+        var fullText = scope.inputText;
+        var currentLength = 0;
 
         function animateText() {
-            var text = ["", "", "", ""]
-            var fullTextLength = $scope.textstring.length;
-            var fullText = $scope.textstring;
-            var currentLength = 0;
+            
             $interval(function () {
-                    if (currentLength < fullTextLength) {
-                        $scope.textstring = fullText.substr(0, currentLength);
+                    if (currentLength <= fullTextLength) {
+                        scope.inputText = fullText.substr(0, currentLength);
                         currentLength++;
                     } else {
                         $interval.cancel();
@@ -75,11 +79,14 @@ app.controller("navController", ["$scope", "$location", "$routeParams", "$interv
                 70);
         };
         animateText();
-        $scope.test = 12;
+    };
 
-
-
-
-
-    }
-]);
+    return {
+        
+        link: link,
+        scope: {
+            inputText: '@'
+        },
+        template: '<span id="logotext" data-ng-bind="inputText" ></span><span class="typed-cursor">|</span>'
+    };
+});
