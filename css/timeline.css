@@ -16,11 +16,11 @@ block-content p {
   text-align: center;
   margin: 1em 0 0 0;
   line-height: 1;
-  letter-spacing: 0.02em;
+  letter-spacing: 3px;
 }
 @media all and (min-width: 40em) {
   .block-content h2 {
-    font-size: 1.2em;
+    font-size: 1.5em;
   }
 }
 
@@ -29,7 +29,7 @@ block-content p {
   font-weight: 300;
   text-transform: uppercase;
   text-align: center;
-  font-size: 0.8em;
+  font-size: 1.1em;
   margin: 0.5em 0;
 }
 
@@ -50,7 +50,7 @@ block-content p {
 
 h1, h2, h3 {
   font-family: "Merriweather", sans-serif;
-  font-weight: 900;
+  font-weight: 300;
 }
 
 p {

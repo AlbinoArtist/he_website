@@ -1,4 +1,4 @@
-var app = angular.module('henrikedlund', ['ngRoute', 'ngAnimate', 'ui.bootstrap', 'angularjs-gauge']);
+var app = angular.module('henrikedlund', ['ngRoute', 'ngAnimate', 'ui.bootstrap']);
 app.config(function ($routeProvider, $locationProvider) {
     $routeProvider
         .when("/", {
@@ -37,25 +37,6 @@ app.controller("navController", ["$scope", "$location", "$routeParams", "$interv
             }
         };
 
-        $scope.bgClass = function () {
-            var background = "notworking";
-            switch ($location.path()) {
-                case "/":
-                    background = "bg-main";
-                    break;
-                case "/portfolio":
-                    background = "bg-portfolio";
-                    break;
-                case "/resume":
-                    background = "bg-resume";
-                    break;
-                case "/contact":
-                    background = "bg-contact";
-                    break;
-            }
-            return background;
-
-        };
     }
 ]);
 
