@@ -21,6 +21,7 @@ div {
 }
 
 .bg {
+     background-color: #cccccc;
     transition: 0.5s ease-in-out all;
     -webkit-transition: 0.5 ease-in-out all;
     -webkit-background-size: cover;
@@ -32,7 +33,7 @@ div {
     
 }
 .bg-main {
-    background-image: url("/images/header-image-darker.jpeg");
+    background-image: url("/images/header-image-darker.jpg");
 }
 .bg-resume {
     background-image: url("/images/resume-header-darker.jpg");
