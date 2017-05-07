@@ -41,13 +41,13 @@ app.controller("navController", ["$scope", "$location", "$routeParams", "$interv
 ]);
 
 app.directive('animateText', function ($interval) {
-    function link(scope, element,attrs) {
+    function link(scope, element, attrs) {
         var fullTextLength = scope.inputText.length;
         var fullText = scope.inputText;
         var currentLength = 0;
 
         function animateText() {
-            
+
             $interval(function () {
                     if (currentLength <= fullTextLength) {
                         scope.inputText = fullText.substr(0, currentLength);
@@ -63,7 +63,7 @@ app.directive('animateText', function ($interval) {
     };
 
     return {
-        
+
         link: link,
         scope: {
             inputText: '@'

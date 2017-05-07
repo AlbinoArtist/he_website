@@ -228,7 +228,9 @@ h3 {
     border: none;
     padding: none;
 }
-
+.skill-icon-font{
+    font-family: 'Lato'
+}
 .typed-cursor {
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
@@ -275,7 +277,7 @@ h3 {
 }
 
 .skill-icons {
-    font-size: 3em;
+    font-size: 2.5em;
 }
 
 .animation-stagger.ng-enter {
@@ -284,8 +286,11 @@ h3 {
     -webkit-transition-duration: 2.5s;
     transition-duration: 2.5s;
 }
+.rating{
+    display: inline-block;
+}
 
-.uncolored-rating {
+.rating-uncolored {
     opacity: 0.3;
 }
 
