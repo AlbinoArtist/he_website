@@ -301,6 +301,10 @@ h3 {
     border: none;
     border-radius: 0;
 }
+
+.portfolio-img{
+    padding: 50px;
+}
 /*When small*/
 
 @media (max-width: 767px) {
@@ -353,6 +357,9 @@ h3 {
         background-color: white;
         color: #95d6d2;
     }
+    .portfolio-img{
+    padding: 5px;
+}
     
 }
 .smaller-card {
